@@ -42,7 +42,7 @@ Exemple:
 def fibonacci(fibonacci_number):
     # Write here your code
     if type(fibonacci_number)!=int:
-        raise ValueError("La entrada debe ser un número")
+        raise ValueError("La entrada debe ser un número entero")
     if type(fibonacci_number)==int:
         if fibonacci_number<0:
             raise ValueError("La entrada debe ser un número mayor que cero")
