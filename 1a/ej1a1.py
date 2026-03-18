@@ -45,7 +45,7 @@ def fibonacci(fibonacci_number):
         raise ValueError("La entrada debe ser un número entero")
     if type(fibonacci_number)==int:
         if fibonacci_number<0:
-            raise ValueError("La entrada debe ser un número mayor que cero")
+            raise ValueError("La entrada debe ser un número entero mayor que cero")
     fibonacci_serie=[]
     l=len(fibonacci_serie)
     i=0
