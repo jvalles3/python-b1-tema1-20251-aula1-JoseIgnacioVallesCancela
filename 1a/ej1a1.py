@@ -41,7 +41,17 @@ Exemple:
 
 def fibonacci(fibonacci_number):
     # Write here your code
-    pass
+    fibonacci_serie=[]
+    l=len(fibonacci_serie)
+    i=0
+    while l<fibonacci_number+1:
+        if i<=1:
+            fibonacci_serie.append(i)
+        else:
+            fibonacci_serie.append(fibonacci_serie[-1]+fibonacci_serie[-2])
+        i+=1
+    return fibonacci_serie[-1]
+            
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
