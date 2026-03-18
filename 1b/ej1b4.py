@@ -61,12 +61,14 @@ Exemple:
      Standard deviation: 26.03
 '''
 
-
 import numpy as np
 
 def results(list_numbers):
     # Write here your code
-    pass
+    average=np.mean(list_numbers)
+    std_var=np.std(list_numbers)
+    print(f'Average: {average:.2f} y Standard deviation: {std_var:.2f}')
+    return average,std_var
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
