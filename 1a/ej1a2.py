@@ -43,7 +43,13 @@ Exemple:
 
 def sum_odd_numbers(list_numbers):
     # Write here your code
-    pass
+    odd_sum=0
+    for number in list_numbers:
+        if type(number)!=int or number<0:
+            raise ValueError ("La entrada debe ser un número entero mayor que cero")
+        if number%2!=0:
+            odd_sum+=number
+    return odd_sum
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
