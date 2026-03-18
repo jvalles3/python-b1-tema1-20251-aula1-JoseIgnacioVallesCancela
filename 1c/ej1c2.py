@@ -37,7 +37,8 @@ def invert_list(lst):
     # Write here your code
     if len(lst)==1:
         return lst
-    
+    if len(lst)==0:
+        return []  
     return [lst[-1]]+invert_list(lst[:-1])
 
 
