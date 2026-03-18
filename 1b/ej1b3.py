@@ -53,9 +53,9 @@ import matplotlib.pyplot as plt
 def line_graph(x, y):
     # Write here your code
     plt.plot(x,y)  
-    plt.set_title("Graph")
-    plt.set_xlabel("Axis X")
-    plt.set_ylabel("Axis Y")
+    plt.title("Graph")
+    plt.xlabel("Axis X")
+    plt.ylabel("Axis Y")
     plt.grid(True)              
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
