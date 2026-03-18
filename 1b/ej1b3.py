@@ -52,11 +52,11 @@ import matplotlib.pyplot as plt
 # Aquesta funció haurà de configurar la gràfica en la variable plt
 def line_graph(x, y):
     # Write here your code
-    fig = plt.figure()   
-    fig.set_title("Graph")
-    fig.set_xlabel("Axis X")
-    fig.set_ylabel("Axis Y")
-    fit.grid(True)              
+    plt.plot(x,y)  
+    plt.set_title("Graph")
+    plt.set_xlabel("Axis X")
+    plt.set_ylabel("Axis Y")
+    plt.grid(True)              
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
 # line_graph([1, 2, 3, 4, 5], [2, 4, 6, 8, 10])
