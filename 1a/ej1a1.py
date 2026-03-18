@@ -41,6 +41,11 @@ Exemple:
 
 def fibonacci(fibonacci_number):
     # Write here your code
+    if type(fibonacci_number)!=int:
+        raise ValueError("La entrada debe ser un número")
+    if type(fibonacci_number)==int:
+        if fibonacci_number<0:
+            raise ValueError("La entrada debe ser un número mayor que cero")
     fibonacci_serie=[]
     l=len(fibonacci_serie)
     i=0
@@ -56,4 +61,4 @@ def fibonacci(fibonacci_number):
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
-print(fibonacci(10))
+# print(fibonacci(10))
