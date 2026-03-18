@@ -50,6 +50,7 @@ def fibonacci(fibonacci_number):
         else:
             fibonacci_serie.append(fibonacci_serie[-1]+fibonacci_serie[-2])
         i+=1
+        l=len(fibonacci_serie)
     return fibonacci_serie[-1]
             
 
